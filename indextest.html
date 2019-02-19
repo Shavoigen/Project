@@ -1,0 +1,98 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MonsteRow</title>
+    <meta name="description" content="name of game" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="names" />
+
+    <!-- CSS -->
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <!--jQuery library-->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="jScripts/myScript.js"></script>
+
+</head>
+<body>
+    <div id="container">
+        <header>
+            <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+            <a href="indextest.html">
+                <img id="logo" src="imagesHTML/logo.png" /> <!--הלוגו של המשחק שלכם-->
+            </a>
+            <!--תפריט הניווט בראש העמוד-->
+            <nav>
+                <ul>
+                    <li class="navEnd"><a class="manage"> לעורך</a></li>
+                    <li><a class="about">אודות</a></li>
+                    <li><a class="howToPlay">הוראות</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="aboutDiv" class="popUp bounceInDown hide">
+            <div class="closeframe"> <a class="closeAbout"></a></div>
+            <div id="logotype"></div>
+
+            <h2>MonsteRow</h2>
+            <p><b>אפיון ופיתוח:</b> אלכסנדר נזין וליאור אביאל</p>
+            <p><b>פותח במסגרת פרויקט בקורסים:</b><br /> סביבות לימוד אינטראקטיביות 1 & אנימציה, תשע''ט</p>
+            <div id="logotype_1"></div>
+            <a target="_blank" href="http://www.hit.ac.il/telem"><b>הפקולטה לטכנולוגיות למידה</b></a>
+
+            <div id="attribute">
+                <h2>מקורות מדיה</h2>
+                <ul>
+                    <li>
+                        <a target="_blank" href="https://www.freepik.com/free-photos-vectors/party">Party vector created by freepik - www.freepik.com</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.freepik.com/free-photos-vectors/gold">Gold vector created by freepik - www.freepik.com</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.freepik.com/free-photos-vectors/background">Background photo created by kues - www.freepik.com</a>
+                    </li>
+                    <li>
+                        Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://freesound.org/people/FunWithSound/sounds/456968/">Success Resolution Video Game Fanfare Sound Effect</a> by <a target="_blank" href="https://freesound.org/people/FunWithSound/"> FunWithSound</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://freesound.org/people/lebaston100/sounds/192275/">Click</a> by <a target="_blank" href="https://freesound.org/people/lebaston100/"> Lebaston100</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://freesound.org/people/sergeeo/sounds/202577/">Xylophone-Cartoon</a> by <a target="_blank" href="https://freesound.org/people/sergeeo/"> sergeoo</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://freesound.org/people/LittleRobotSoundFactory/sounds/276091/">Coins Sound Library</a> by <a target="_blank" href="https://freesound.org/people/LittleRobotSoundFactory/"> LittleRobotSoundFactory </a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://freesound.org/people/Sirkoto51/sounds/352283/">Success Loop #1</a> by <a target="_blank" href="https://freesound.org/people/Sirkoto51/"> Sirkoto51 </a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="howToPlayDiv" class="popUp bounceInDown hide">
+            <div class="closeframe"> <a class="closeHowToPlay"></a></div>
+            <h2>איך משחקים?</h2>
+            <div id="gif"></div>
+            <p>גוררים את האסימונים שבמחסן אל המשפך של <br /> העמודה המתאימה, כדי למקם אותם במקומות הרצויים</p>
+            <div id="gif1"></div>
+            <p>מחברים ארבעה אסימונים מצבע זהה ברצף  <br /> מאונך, מאוזן או באלכסון, כדי לגבור על היריב</p>
+        </div>
+
+        <div id="gameArea" class="">
+            <!--src = הקישור של דף המשחק שלכם (לא קובץ האנימייט)-->
+            <iframe src="montserRow.html" frameBorder="0" allowfullscreen="true">Browser not compatible.</iframe>
+        </div>
+    </div>
+</body>
+
+</html>
